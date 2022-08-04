@@ -1,0 +1,93 @@
+.landing {
+  min-height: 92vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+
+  &__content {
+    -webkit-clip-path: polygon();
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 100%,
+      60% 100%,
+      50% 92%,
+      40% 100%,
+      0% 100%
+    );
+    padding: 6rem 10rem;
+    background-image: linear-gradient(to bottom, #313131a1, #313131a1),
+      url("https://images.unsplash.com/photo-1536675572774-1b66ac2e26e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=431&q=80");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .heading-name {
+    font-size: 9rem;
+    color: white;
+
+    @media screen and (max-width: 648px) {
+      font-size: 7rem;
+    }
+    @media screen and (max-width: 648px) {
+      font-size: 6rem;
+    }
+    @media screen and (max-width: 440px) {
+      font-size: 5rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 4rem;
+    }
+  }
+
+  .heading-position {
+    font-size: 8rem;
+    color: white;
+    position: relative;
+    margin-top: 1rem;
+
+    @media screen and (max-width: 648px) {
+      font-size: 6.2rem;
+    }
+    @media screen and (max-width: 648px) {
+      margin-top: 2rem;
+      font-size: 5.2rem;
+    }
+    @media screen and (max-width: 440px) {
+      font-size: 4.2rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 3.2rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      top: -0.5rem;
+      left: 0;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+
+    @media screen and (max-width: 520px) {
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        justify-content: center;
+        width: 200px;
+      }
+    }
+  }
+}

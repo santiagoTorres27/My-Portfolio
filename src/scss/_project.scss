@@ -1,0 +1,126 @@
+.project {
+  &__header {
+    height: 92vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 700px) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__title-name {
+    text-align: center;
+  }
+
+  &__links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+  }
+
+  // - INFO
+  &__info {
+    min-height: 100vh;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__slider {
+    @media screen and (max-width: 1200px) {
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__description {
+    color: white;
+    font-size: 1.6rem;
+
+    @media screen and (max-width: 1200px) {
+      grid-row: 2/-1;
+      display: grid;
+      grid-column-gap: 4rem;
+      grid-template-columns: repeat(2, 1fr);
+
+      .desc {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+      grid-gap: 0.5rem;
+    }
+  }
+
+  .heading-4 {
+    margin-top: 5rem;
+  }
+
+  &__stack-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    img {
+      margin-right: 2rem;
+    }
+  }
+
+  ul {
+    li {
+      list-style-type: none;
+
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

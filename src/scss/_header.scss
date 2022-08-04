@@ -1,0 +1,171 @@
+.header {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    background-image: url("/img//header-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 10rem;
+
+    margin-top: -3rem;
+    animation: content-bg 1s ease-out;
+
+    position: relative;
+
+    @media screen and (max-width: 530px) {
+      padding: 5rem 4rem;
+    }
+
+    .heading-1 {
+      color: #232323;
+      opacity: 0;
+      animation: name 1s forwards;
+      animation-delay: 0.2s;
+      text-align: center;
+
+      @media screen and (max-width: 450px) {
+        font-size: 4rem;
+        letter-spacing: 0.5rem;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  // - POSITION
+  &__position {
+    margin-top: 3rem;
+    color: #232323;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.8rem;
+    text-transform: uppercase;
+    animation: position 1s forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+    margin-bottom: 5rem;
+
+    @media screen and (max-width: 450px) {
+      font-size: 1.8rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+
+  // - LINKS
+  &__links {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: 530px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    // - LINKS
+    &--1 {
+      animation: link-anim 0.8s forwards;
+      animation-delay: 1.1s;
+    }
+
+    &--2 {
+      animation: link-anim 0.8s forwards;
+      animation-delay: 1.3s;
+    }
+  }
+}
+
+// - ANIMATIONS
+@keyframes border-left-anim {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 95%;
+    height: 75%;
+  }
+}
+
+@keyframes border-right-anim {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 95%;
+    height: 75%;
+  }
+}
+
+@keyframes header-content-anim {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.318),
+      0 0 2rem rgba(255, 255, 255, 0.218), 0 0 4rem rgba(255, 255, 255, 0.118);
+  }
+}
+
+// - WELCOME ANIMATIONS
+@keyframes content-bg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes name {
+  from {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes position {
+  from {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// - LINKS
+@keyframes link-anim {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

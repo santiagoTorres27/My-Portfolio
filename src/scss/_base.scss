@@ -1,0 +1,115 @@
+// - COLORS
+$color-bg-dark: #111111;
+$color-bg-light: #181818;
+
+$color-primary: #ec4e00;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-secondary);
+  background-color: var(--color-bg-light);
+
+  // - Media query
+  @media only screen and (max-width: 768px) {
+    font-size: 55%;
+  }
+}
+
+// - BUTTONS
+.btn {
+  color: white;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0.5rem;
+
+  &--outlined {
+    padding: 1rem 2.5rem;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--outlined::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    position: absolute;
+    background-color: white;
+    transition: all 0.3s;
+    z-index: -10;
+  }
+
+  &--outlined:hover {
+    color: $color-bg-dark;
+  }
+
+  &--outlined:hover::before {
+    left: -0%;
+    color: $color-bg-dark;
+  }
+
+  &--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: 2rem;
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(73deg)
+        brightness(103%) contrast(103%);
+      transition: filter 1s;
+    }
+  }
+
+  &--icon:hover img {
+    filter: invert(12%) sepia(7%) saturate(22%) hue-rotate(331deg)
+      brightness(95%) contrast(93%);
+  }
+}
+
+// - CONTAINER
+.container {
+  margin: 0 auto;
+  width: 70%;
+
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+  }
+}
+
+// - SECTION
+section {
+  position: relative;
+
+  // &::before {
+  //   content: "";
+  //   width: 100%;
+  //   height: 0.5px;
+  //   position: absolute;
+  //   background-color: rgba(255, 255, 255, 0.15);
+  //   top: 0;
+  //   left: 0;
+  // }
+}
+
+.app {
+  overflow: hidden;
+}

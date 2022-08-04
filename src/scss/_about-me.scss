@@ -1,0 +1,136 @@
+.about-me {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: linear-gradient(to bottom, #313131a1, #313131a1),
+    url("https://images.unsplash.com/photo-1536675572774-1b66ac2e26e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=431&q=80");
+  background-size: cover;
+  background-position: center;
+
+  &::after {
+    content: "";
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    background-color: #232323;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: skewX(-45deg) translateX(-50%);
+
+    @media screen and (max-width: 668px) {
+      width: 125%;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    z-index: 2;
+  }
+
+  // - TEXT
+  &__text {
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    max-width: 700px;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    z-index: 2;
+
+    @media screen and (max-width: 1000px) {
+      max-width: 500px;
+    }
+    @media screen and (max-width: 860px) {
+      align-items: center;
+    }
+    @media screen and (max-width: 668px) {
+      background-color: transparent;
+    }
+
+    p {
+      margin-bottom: 3rem;
+      text-align-last: center;
+
+      @media screen and (max-width: 860px) {
+        text-align-last: center;
+      }
+    }
+  }
+
+  // &__img {
+  //   position: relative;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+  // // - BANNER
+  // &__banner {
+  //   position: absolute;
+  //   top: 42%;
+  //   transform: skewY(-4deg);
+  //   transform-style: preserve-3d;
+
+  //   overflow: hidden;
+  //   font-family: var(--font-primary);
+  //   font-size: 4rem;
+  //   // color: #232323;
+  //   color: white;
+  //   text-align: center;
+
+  //   @media screen and (max-width: 500px) {
+  //     font-size: 3rem;
+  //   }
+  // }
+
+  // // - Hello
+  // &__hello {
+  //   width: 280px;
+  //   height: 280px;
+  //   margin-bottom: 2rem;
+  //   position: relative;
+  //   animation: hello-anim 24s linear infinite;
+  //   z-index: -1000;
+
+  //   @media screen and (max-width: 500px) {
+  //     height: 180px;
+  //     width: 180px;
+  //   }
+
+  //   &__item {
+  //     top: 0;
+  //     right: 50%;
+  //     position: absolute;
+  //     height: 280px;
+  //     font-size: 1.6rem;
+
+  //     @media screen and (max-width: 500px) {
+  //       height: 180px;
+  //     }
+
+  //     p {
+  //       // - TEXT SHADOW CIRCULAR LETTERS
+  //       color: white;
+  //       // background: #232323;
+  //       // text-shadow: 0 0 1rem #ffffff;
+  //     }
+  //   }
+  // }
+}
+
+@keyframes hello-anim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
