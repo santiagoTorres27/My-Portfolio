@@ -64,12 +64,15 @@ export const projectList = [
     title: "Task Manager",
     description:
       "Web page created for task management, users can keep track of future tasks and organize their life",
-    imagePreview: "./img/projects/my-task-manager-preview.jpg",
+    imagePreview: "./img/projects/my-task-manager-preview.png",
     imageMain: "./img/projects/my-task-manager/my-task-manager-1.png",
     images: [
       "./img/projects/my-task-manager/my-task-manager-2.png",
       "./img/projects/my-task-manager/my-task-manager-3.png",
       "./img/projects/my-task-manager/my-task-manager-4.png",
+      "./img/projects/my-task-manager/my-task-manager-5.png",
+      "./img/projects/my-task-manager/my-task-manager-6.png",
+      "./img/projects/my-task-manager/my-task-manager-7.png",
     ],
     descriptionLarge:
       "Web page created for task management, the user can add new tasks for the different existing categories and keep track of future tasks.",
@@ -93,12 +96,20 @@ export const projectList = [
       {
         feature: "Filter by categories",
       },
+      {
+        feature: "Change between light and dark mode",
+      },
     ],
     links: [
       {
         name: "View on Github",
         link: "https://github.com/santiagoTorres27/My-Task-Manager",
         icon: "./img/skills/github.svg",
+      },
+      {
+        name: "View live",
+        link: "https://my-task-manager-sta.netlify.app/",
+        icon: "./img/skills/web.svg",
       },
     ],
   },

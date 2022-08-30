@@ -18,7 +18,7 @@ const Landing = () => {
 
         <div className="landing__links">
           <a
-            className="btn btn--outlined btn--icon"
+            className="btn btn--outlined btn--icon link-1"
             href="https://github.com/santiagoTorres27"
             target="_blank"
           >
@@ -27,7 +27,7 @@ const Landing = () => {
           </a>
 
           <a
-            className="btn btn--outlined btn--icon"
+            className="btn btn--outlined btn--icon link-2"
             href="https://www.linkedin.com/in/santiago-torres-ayala/"
             target="_blank"
           >

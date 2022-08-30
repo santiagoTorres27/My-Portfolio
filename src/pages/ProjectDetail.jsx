@@ -27,7 +27,11 @@ const ProjectDetail = () => {
   return (
     <div className="container project app">
       {/* HEADER */}
-      <div className="project__header">
+      <div
+        className="project__header"
+        data-aos="fade-in"
+        data-aos-duration="1000"
+      >
         {/* Header title */}
         <div className="project__title">
           <h3 className="heading-2 project__title-name">{title}</h3>
