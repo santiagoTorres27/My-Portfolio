@@ -7,10 +7,10 @@ export const projectList = [
     imagePreview: "./img/projects/helppet-preview.jpg",
     imageMain: "./img/projects/helppet/helppet-1.png",
     images: [
-      "./img/projects/helppet/helppet-2.png",
-      "./img/projects/helppet/helppet-3.png",
-      "./img/projects/helppet/helppet-4.png",
-      "./img/projects/helppet/helppet-5.png",
+      "./img/projects/helppet/helppet-1.jpg",
+      "./img/projects/helppet/helppet-2.jpg",
+      "./img/projects/helppet/helppet-3.jpg",
+      "./img/projects/helppet/helppet-4.jpg",
     ],
     descriptionLarge:
       "HelpPet is a web application for pet adoption. The website offers the account creation function so that users can connect with other people and thus offer a home for their animals.",
@@ -48,12 +48,12 @@ export const projectList = [
     ],
     links: [
       {
-        name: "View on Github",
+        name: "Github",
         link: "https://github.com/santiagoTorres27/HelpPet",
         icon: "./img/skills/github.svg",
       },
       {
-        name: "View live",
+        name: "Live",
         link: "https://santiagotorres27.github.io/HelpPet/",
         icon: "./img/skills/web.svg",
       },
@@ -67,12 +67,12 @@ export const projectList = [
     imagePreview: "./img/projects/my-task-manager-preview.png",
     imageMain: "./img/projects/my-task-manager/my-task-manager-1.png",
     images: [
-      "./img/projects/my-task-manager/my-task-manager-2.png",
-      "./img/projects/my-task-manager/my-task-manager-3.png",
-      "./img/projects/my-task-manager/my-task-manager-4.png",
-      "./img/projects/my-task-manager/my-task-manager-5.png",
-      "./img/projects/my-task-manager/my-task-manager-6.png",
-      "./img/projects/my-task-manager/my-task-manager-7.png",
+      "./img/projects/my-task-manager/my-task-manager-1.jpg",
+      "./img/projects/my-task-manager/my-task-manager-2.jpg",
+      "./img/projects/my-task-manager/my-task-manager-3.jpg",
+      "./img/projects/my-task-manager/my-task-manager-4.jpg",
+      "./img/projects/my-task-manager/my-task-manager-5.jpg",
+      "./img/projects/my-task-manager/my-task-manager-6.jpg",
     ],
     descriptionLarge:
       "Web page created for task management, the user can add new tasks for the different existing categories and keep track of future tasks.",
@@ -102,12 +102,12 @@ export const projectList = [
     ],
     links: [
       {
-        name: "View on Github",
+        name: "Github",
         link: "https://github.com/santiagoTorres27/My-Task-Manager",
         icon: "./img/skills/github.svg",
       },
       {
-        name: "View live",
+        name: "Live",
         link: "https://my-task-manager-sta.netlify.app/",
         icon: "./img/skills/web.svg",
       },
@@ -121,8 +121,9 @@ export const projectList = [
     imagePreview: "./img/projects/favorloop-preview.jpg",
     imageMain: "./img/projects/favorloop/favorloop-1.png",
     images: [
-      "./img/projects/favorloop/favorloop-2.png",
-      "./img/projects/favorloop/favorloop-3.png",
+      "./img/projects/favorloop/favorloop-1.jpg",
+      "./img/projects/favorloop/favorloop-2.jpg",
+      "./img/projects/favorloop/favorloop-3.jpg",
       "./img/projects/favorloop/favorloop-4.jpg",
     ],
     descriptionLarge:
@@ -150,12 +151,12 @@ export const projectList = [
     ],
     links: [
       {
-        name: "View on Github",
+        name: "Github",
         link: "https://github.com/santiagoTorres27/FavorLoopPFC",
         icon: "./img/skills/github.svg",
       },
       {
-        name: "View on PlayStore",
+        name: "PlayStore",
         link: "https://play.google.com/store/apps/details?id=com.dam.favorloop&gl=ES",
         icon: "./img/skills/play-store.svg",
       },
@@ -168,9 +169,10 @@ export const projectList = [
     imagePreview: "./img/projects/goality-preview.jpg",
     imageMain: "./img/projects/goality/goality-1.png",
     images: [
-      "./img/projects/goality/goality-2.png",
-      "./img/projects/goality/goality-3.png",
-      "./img/projects/goality/goality-4.png",
+      "./img/projects/goality/goality-1.jpg",
+      "./img/projects/goality/goality-2.jpg",
+      "./img/projects/goality/goality-3.jpg",
+      "./img/projects/goality/goality-4.jpg",
     ],
     descriptionLarge:
       "Goality is a football team and player management app. It allows users to register as members of the technical team, see the results of their team, call training sessions, manage member profiles as well as view the statistics of the players and their team.",
@@ -197,7 +199,7 @@ export const projectList = [
     ],
     links: [
       {
-        name: "View on Github",
+        name: "Github",
         link: "https://github.com/santiagoTorres27/Goality",
         icon: "./img/skills/github.svg",
       },
@@ -211,9 +213,9 @@ export const projectList = [
     imagePreview: "./img/projects/memory-game-preview.jpg",
     imageMain: "./img/projects/memory-game/memory-game-1.png",
     images: [
-      "./img/projects/memory-game/memory-game-2.png",
-      "./img/projects/memory-game/memory-game-3.png",
-      "./img/projects/memory-game/memory-game-4.jpg",
+      "./img/projects/memory-game/memory-game-1.jpg",
+      "./img/projects/memory-game/memory-game-2.jpg",
+      "./img/projects/memory-game/memory-game-3.jpg",
     ],
     descriptionLarge:
       "Goality is a football team and player management app. It allows users to register as members of the technical team, see the results of their team, call training sessions, manage member profiles as well as view the statistics of the players and their team.",
@@ -240,7 +242,7 @@ export const projectList = [
     ],
     links: [
       {
-        name: "View on Github",
+        name: "Github",
         link: "https://github.com/santiagoTorres27/MemoryGame",
         icon: "./img/skills/github.svg",
       },
@@ -254,8 +256,9 @@ export const projectList = [
     imagePreview: "./img/projects/pomodoro-preview.jpg",
     imageMain: "./img/projects/pomodoro-timer/pomodoro-timer-1.png",
     images: [
-      "./img/projects/pomodoro-timer/pomodoro-timer-2.png",
-      "./img/projects/pomodoro-timer/pomodoro-timer-3.png",
+      "./img/projects/pomodoro-timer/pomodoro-timer-1.jpg",
+      "./img/projects/pomodoro-timer/pomodoro-timer-2.jpg",
+      "./img/projects/pomodoro-timer/pomodoro-timer-3.jpg",
       "./img/projects/pomodoro-timer/pomodoro-timer-4.png",
     ],
     descriptionLarge:
@@ -283,7 +286,7 @@ export const projectList = [
     ],
     links: [
       {
-        name: "View on Github",
+        name: "Github",
         link: "https://github.com/santiagoTorres27/PomodoroTimer",
         icon: "./img/skills/github.svg",
       },

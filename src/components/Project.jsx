@@ -15,17 +15,21 @@ const Project = ({ id, title, description, imagePreview }) => {
       data-aos-delay="100"
       data-aos-duration="1000"
     >
+      <div className="work__image">
+        <img src={imagePreview} alt={title} />
+      </div>
+
       <div className="work__description">
         <h3 className="heading-3">{title}</h3>
         <p>{description}</p>
-        <Link to={`/project/${id}`} className="btn btn--outlined">
-          View more
-        </Link>
       </div>
 
-      <div className="work__image">
-        <img src={imagePreview} alt="Project 1" />
-      </div>
+      <Link
+        className="btn btn--outlined btn--outlined--small btn--icon "
+        to={`/project/${id}`}
+      >
+        View more
+      </Link>
     </div>
   );
 };

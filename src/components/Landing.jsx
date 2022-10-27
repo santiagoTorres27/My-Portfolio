@@ -3,18 +3,9 @@ import React from "react";
 const Landing = () => {
   return (
     <div className="landing">
-      <div className="landing__content">
-        <div className="landing__title">
-          <h1 className="heading-1 heading-name">
-            <span className="name">Santiago</span>
-            <span className="lastname">Torres</span>
-          </h1>
-
-          <h2 className="heading-1 heading-position">
-            <span className="front">Front-End</span>
-            <span className="dev">Developer</span>
-          </h2>
-        </div>
+      <div className="container landing__container">
+        <h1 className="heading-1 name">Santiago Torres</h1>
+        <h2 className="heading-1 position">Web Developer</h2>
 
         <div className="landing__links">
           <a

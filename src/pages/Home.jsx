@@ -8,7 +8,7 @@ import Work from "../components/Work";
 const Home = () => {
   return (
     <>
-      <main className="container app">
+      <main className="app">
         <div>
           <Landing />
           <AboutMe />

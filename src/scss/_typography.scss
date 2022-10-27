@@ -1,13 +1,8 @@
 .heading-1 {
   font-family: var(--font-primary);
   color: white;
-  font-size: 12rem;
+  font-size: 4rem;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 0.9;
-  letter-spacing: 0.5rem;
 
   &--variation {
     font-size: 10rem;
@@ -16,9 +11,7 @@
 
 .heading-2 {
   font-family: var(--font-primary);
-  font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  font-size: 3rem;
   position: relative;
   color: white;
   margin-bottom: 4rem;
@@ -26,16 +19,14 @@
 
 .heading-3 {
   font-family: var(--font-primary);
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
   color: white;
-  margin-bottom: 2rem;
 }
 
 .heading-4 {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 8px;
   margin-bottom: 1rem;

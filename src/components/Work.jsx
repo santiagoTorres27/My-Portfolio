@@ -7,19 +7,23 @@ const Work = () => {
 
   return (
     <section className="work" id="work">
-      <h2 className="heading-2" data-aos="fade">
-        My Work
-      </h2>
+      <div className="container">
+        <h2 className="heading-2" data-aos="fade">
+          This is my work
+        </h2>
 
-      {projects.map(({ id, title, description, imagePreview }) => (
-        <Project
-          key={id}
-          id={id}
-          title={title}
-          description={description}
-          imagePreview={imagePreview}
-        />
-      ))}
+        <div className="work__projects-container">
+          {projects.map(({ id, title, description, imagePreview }) => (
+            <Project
+              key={id}
+              id={id}
+              title={title}
+              description={description}
+              imagePreview={imagePreview}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

@@ -2,135 +2,88 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  background-image: linear-gradient(to bottom, #313131a1, #313131a1),
-    url("https://images.unsplash.com/photo-1536675572774-1b66ac2e26e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=431&q=80");
-  background-size: cover;
-  background-position: center;
+  align-items: center;
+  text-align: center;
 
-  &::after {
-    content: "";
-    width: 95%;
-    height: 100%;
-    position: absolute;
-    background-color: #232323;
-    top: 0;
-    left: 50%;
-    z-index: 1;
-    transform: skewX(-45deg) translateX(-50%);
+  // - Container
+  &__container {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-    @media screen and (max-width: 668px) {
-      width: 125%;
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
     }
   }
 
-  h2 {
-    text-align: center;
-    z-index: 2;
+  // - CV
+  &__cv {
+    color: #8ee26b;
+    float: left;
   }
 
-  // - TEXT
-  &__text {
-    color: white;
-    font-size: 1.6rem;
+  // - Item
+  &__item {
+    width: 100%;
+    background-color: var(--color-bg-light);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    padding: 2rem;
     display: flex;
-    max-width: 700px;
-    padding: 5rem;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: #232323;
-    z-index: 2;
+    justify-content: center;
 
     @media screen and (max-width: 1000px) {
-      max-width: 500px;
+      flex-direction: column;
+
+      p {
+        text-align: center;
+      }
     }
-    @media screen and (max-width: 860px) {
-      align-items: center;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: row;
     }
-    @media screen and (max-width: 668px) {
-      background-color: transparent;
+
+    h3 {
+      color: white;
+      font-family: inherit;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    img {
+      width: 6rem;
+      margin: 2rem;
     }
 
     p {
-      margin-bottom: 3rem;
-      text-align-last: center;
-
-      @media screen and (max-width: 860px) {
-        text-align-last: center;
-      }
+      color: white;
+      font-size: 1rem;
+      font-family: var(--font-secondary);
+      text-align: left;
     }
   }
-
-  // &__img {
-  //   position: relative;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-
-  // // - BANNER
-  // &__banner {
-  //   position: absolute;
-  //   top: 42%;
-  //   transform: skewY(-4deg);
-  //   transform-style: preserve-3d;
-
-  //   overflow: hidden;
-  //   font-family: var(--font-primary);
-  //   font-size: 4rem;
-  //   // color: #232323;
-  //   color: white;
-  //   text-align: center;
-
-  //   @media screen and (max-width: 500px) {
-  //     font-size: 3rem;
-  //   }
-  // }
-
-  // // - Hello
-  // &__hello {
-  //   width: 280px;
-  //   height: 280px;
-  //   margin-bottom: 2rem;
-  //   position: relative;
-  //   animation: hello-anim 24s linear infinite;
-  //   z-index: -1000;
-
-  //   @media screen and (max-width: 500px) {
-  //     height: 180px;
-  //     width: 180px;
-  //   }
-
-  //   &__item {
-  //     top: 0;
-  //     right: 50%;
-  //     position: absolute;
-  //     height: 280px;
-  //     font-size: 1.6rem;
-
-  //     @media screen and (max-width: 500px) {
-  //       height: 180px;
-  //     }
-
-  //     p {
-  //       // - TEXT SHADOW CIRCULAR LETTERS
-  //       color: white;
-  //       // background: #232323;
-  //       // text-shadow: 0 0 1rem #ffffff;
-  //     }
-  //   }
-  // }
 }
 
-@keyframes hello-anim {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+// - Download icon
+
+.download-icon {
+  animation: download-anim 1.5s infinite reverse;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.download-icon:hover {
+  transform: scale(1.1);
+  animation: none;
+}
+
+@keyframes download-anim {
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.8rem rgba(143, 226, 107, 0.205));
   }
 }

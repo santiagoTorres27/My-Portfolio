@@ -5,7 +5,6 @@ import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
   const [color, setColor] = useState(false);
   const [navVisible, setNavVisible] = useState(false);
-  const params = useParams();
 
   const changeColor = () => {
     if (window.scrollY >= 20) {
